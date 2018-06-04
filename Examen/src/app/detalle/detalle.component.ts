@@ -8,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class DetalleComponent implements OnInit {
 
   constructor() { }
-
+  clickGuardar() {
+    alert('dio clic en guardar');
+    // execute action
+  }
+  clickLimpiar(){
+    alert('dio clic en limpiar');
+    // execute action
+  }
   ngOnInit() {
   }
 
