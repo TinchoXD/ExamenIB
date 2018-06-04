@@ -1,0 +1,57 @@
+.sa-fondo-pelicula-banner {
+
+  background-color: #000;
+  border-style: solid;
+  border-color: #000;
+  border-width: 15px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(34%);
+  /*width: 900px;*/
+  /*height: 400px;*/
+  text-align: left;
+
+
+
+
+  /*max-width: 95%;*/
+  /*height: auto  ;*/
+
+  /*display: block;*/
+  margin: auto;
+
+  /*align-content: right;*/
+
+}
+.sa-color-letras-pelicula-banner {
+  color: #fff
+}
+.sa-fondo-estado {
+  max-width: 120px;
+  text-align: center;
+}
+.sa-color-estado-amarillo {
+  background-color: #fabb00;
+}
+.sa-color-estado-rosado {
+  background-color: #e3003e;
+}
+.sa-espaciado-top {
+  height: 400px;
+}
+.sa-espaciado-mid {
+  height: 400px;
+}
+.sa-espaciado-bot {
+  height: 400px;
+}
+
+
+.sa-formato-img{
+  max-width: 100%;
+  height: auto;
+  display:block;
+}

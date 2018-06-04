@@ -1,0 +1,20 @@
+<h1>{{esEstreno}}</h1>
+
+<div class="sa-fondo-pelicula-banner sa-color-letras-pelicula-banner"
+     [style.background-image]="'url('+urlImagen+')'" >
+
+  <div class="sa-espaciado-top"></div>
+
+
+  <p
+    (click)="hizoClicEnEstado()"
+    [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
+
+
+  <h1>{{nombrePelicula}}</h1>
+  <p>{{descripcionPelicula}}</p>
+</div>
+
+
+
+

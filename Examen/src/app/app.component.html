@@ -1,0 +1,258 @@
+<!--<style>-->
+<!--div {-->
+<!--background-color: lightblue;-->
+<!--}-->
+<!--</style>-->
+
+
+<!--<app-logo></app-logo>-->
+
+<!--<div class="row" style="background-color: black;">-->
+
+  <!--<div class="col-md-7"></div>-->
+
+  <!--<div class="col-md-4">-->
+    <!--<div class="row">-->
+      <!--<div class="col-md-2" style="color: #8a8a8a;text-align: center;">-->
+        <!--<a href="http://localhost:4200/" style="margin: auto">Musica</a>-->
+      <!--</div>-->
+      <!--<div class="col-md-2" style="color: #8a8a8a;text-align: center;">-->
+        <!--<a href="http://localhost:4200/">Audio Latino</a>-->
+      <!--</div>-->
+      <!--<div class="col-md-2" style="color: #8a8a8a;text-align: center;">-->
+        <!--<a href="http://localhost:4200/"> Ver Los Simpons</a>-->
+      <!--</div>-->
+      <!--<div class="col-md-2" style="color: #8a8a8a;text-align: center;">-->
+        <!--<a href="http://localhost:4200/">FaceBook</a>-->
+      <!--</div>-->
+      <!--<div class="col-md-2" style="color: #8a8a8a;text-align: center;">-->
+        <!--<a href="http://localhost:4200/">Twitter</a></div>-->
+      <!--<div class="col-md-2" style="color: #8a8a8a;text-align: center;">-->
+        <!--<h2><a href="http://localhost:4200/">Ingresar</a></h2>-->
+      <!--</div>-->
+    <!--</div>-->
+
+  <!--</div>-->
+
+<!--</div>-->
+
+<!--<br>-->
+<!--<br>-->
+<!--<div class="row">-->
+  <!--<div class="col-md-6"></div>-->
+
+  <!--<div class="col-md-5">-->
+    <!--<div class="row">-->
+      <!--<div class="col-md-2">Home</div>-->
+      <!--<div class="col-md-2">-->
+        <!--<select>-->
+          <!--<option value="estreno2018">Estreno 2018</option>-->
+          <!--<option value="estreno2017">Estreno 2017</option>-->
+          <!--<option value="estreno2016">Estreno 2016</option>-->
+          <!--<option value="estreno2015">Estreno 2015</option>-->
+        <!--</select>-->
+      <!--</div>-->
+      <!--<div class="col-md-2">Series</div>-->
+      <!--<div class="col-md-2">DMCA</div>-->
+      <!--<div class="col-md-2">Descargas</div>-->
+      <!--<div class="col-md-2">-->
+        <!--<input type="text" name="peliculaBuscada"> Buscar-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+<!--<br>-->
+
+<!--<div class="row">-->
+  <!--<div class="col-lg-6">sec1-->
+    <!--<app-pelicula-banner ></app-pelicula-banner>-->
+  <!--</div>-->
+  <!--<div class="col-lg-6">sec2-->
+    <!--<app-pelicula-banner ></app-pelicula-banner>-->
+  <!--</div>-->
+
+<!--</div>-->
+<!--<app-separador></app-separador>-->
+
+<!--<div class="row">-->
+  <!--<div class="col-md-3">sec1-->
+    <!--<app-pelicula-banner></app-pelicula-banner>-->
+  <!--</div>-->
+  <!--<div class="col-md-3">sec2-->
+    <!--<app-pelicula-banner></app-pelicula-banner>-->
+  <!--</div>-->
+  <!--<div class="col-md-3">sec3-->
+    <!--<app-pelicula-banner></app-pelicula-banner>-->
+  <!--</div>-->
+  <!--<div class="col-md-3">sec4-->
+    <!--<app-pelicula-banner></app-pelicula-banner>-->
+  <!--</div>-->
+<!--</div>-->
+
+<!--<app-separador></app-separador>-->
+
+<!--<div class="row">-->
+
+  <!--<div class="col-md-6">-->
+    <!--<div class="row">-->
+      <!--<div class="col-md-3">1-->
+        <!--<app-pelicula-banner></app-pelicula-banner>-->
+      <!--</div>-->
+      <!--<div class="col-md-3">2-->
+        <!--<app-pelicula-banner></app-pelicula-banner>-->
+      <!--</div>-->
+      <!--<div class="col-md-3">3-->
+        <!--<app-pelicula-banner></app-pelicula-banner>-->
+      <!--</div>-->
+      <!--<div class="col-md-3">4-->
+        <!--<app-pelicula-banner></app-pelicula-banner>-->
+      <!--</div>-->
+    <!--</div>-->
+
+  <!--</div>-->
+  <!--<div class="col-md-6">-->
+    <!--<div class="row">-->
+      <!--<div class="col-md-3">5-->
+        <!--<app-pelicula-banner></app-pelicula-banner>-->
+      <!--</div>-->
+      <!--<div class="col-md-3">6-->
+        <!--<app-pelicula-banner></app-pelicula-banner>-->
+      <!--</div>-->
+      <!--<div class="col-md-3">7-->
+        <!--<app-pelicula-banner></app-pelicula-banner>-->
+      <!--</div>-->
+      <!--<div class="col-md-3">8-->
+        <!--<app-pelicula-banner class="img-circle"></app-pelicula-banner>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+
+<!--</div>-->
+
+
+<!--<br>-->
+<!--<br>-->
+<!--<br>-->
+<!--<br><br><br><br><br><br><br><br><br><br>-->
+
+<!--<div class="row">-->
+  <!--<div class="col-sm-6 text-center" *ngFor="let pelicula of arregloPeliculas">-->
+    <!--&lt;!&ndash;<img [src]="pelicula.urlImagen" [alt]="pelicula.descripcion" >&ndash;&gt;-->
+    <!--&lt;!&ndash;<h1>{{pelicula.nombrePelicula}}/{{pelicula.esEstreno}}</h1>&ndash;&gt;-->
+    <!--&lt;!&ndash;<p>{{pelicula.descripcion}}</p>&ndash;&gt;-->
+
+  <!--<app-pelicula-banner [urlImagen]="pelicula.urlImagen"-->
+  <!--[descipcionPelicula]="pelicula.descripcion"-->
+                       <!--[nombrePelicula]="pelicula.nombrePelicula"-->
+                       <!--[esEstreno]="pelicula.esEstreno"-->
+  <!--(dioClickEnEstado)="alertar($event)">-->
+
+  <!--</app-pelicula-banner>-->
+
+    <!--<button (click)="pelicula.esEstreno = !pelicula.esEstreno"> Cambiar es estreno </button>-->
+
+
+  <!--</div>-->
+<!--</div>-->
+
+
+<!--<div class="row">-->
+
+
+  <!--<div class="col-sm-2 text-center" *ngFor="let numero of arregloNumeros;-->
+<!--let indice = index">-->
+
+    <!--{{indice}}: Numero {{numero}}-->
+  <!--</div>-->
+
+  <!--<div class="col-md-6">-->
+
+
+
+    <!--<button (click)="mostrarHola = !mostrarHola "> Cambiar </button>-->
+    <!--<h1 *ngIf="mostrarHola" >  Hola</h1>-->
+  <!--</div>-->
+  <!--<div class="col-md-6">-->
+    <!--<h1 *ngIf="!mostrarHola" >   mundo</h1>-->
+  <!--</div>-->
+
+  <!--<div class="col-md-3"></div>-->
+  <!--<div class="col-md-3"></div>-->
+  <!--<div class="col-md-3"></div>-->
+  <!--<div class="col-md-3"></div>-->
+<!--</div>-->
+
+
+<!--<br>-->
+<!--<br>-->
+<!--<br>-->
+<!--<br><br><br><br><br><br><br><br><br><br>-->
+
+<div class="row">
+  <div class="=col-md-6 fondo-negro" >carrusel
+    <app-carrusel > </app-carrusel>
+  </div>
+
+  <div class="col-md-6">
+<app-cabecera> </app-cabecera>
+  </div>
+</div>
+<br>
+
+<app-listado></app-listado>
+
+<br>
+
+<div class="row">
+
+  <div class="col-md-6">1</div>
+  <div class="col-md-6">2</div>
+
+</div>
+
+<!--<app-pelicula-banner></app-pelicula-banner>-->
+
+<!--<app-ejerboton></app-ejerboton>-->
+
+<!--<app-grilla></app-grilla>-->
+
+
+<!--<h2 [class]="clase">Two way data binding</h2>-->
+<!--<ul>-->
+<!--<li> clase <-> template [(ngModel)]</li>-->
+<!--</ul>-->
+<!--<p>Clase: {{clase}}</p>-->
+<!--<input type="text"-->
+<!--id="clase"-->
+<!--name="clase"-->
+<!--[(ngModel)]="clase"-->
+<!--&gt;-->
+
+<!--<h2>One way data binding</h2>-->
+<!--<ul>-->
+<!--<li>Clase al template -> [class]</li>-->
+<!--li>Template a la clase -> (click)</li>-->
+<!--</ul>-->
+
+<!--<div [hidden]="false">-->
+<!--<h1 [id]="nombreClase"-->
+<!--[class]="nombreClase"-->
+<!--&gt;Hola amigos </h1>-->
+<!--<input type="text" #textoInput >-->
+<!--<div>-->
+<!--<p>Nombre: {{nombre}}</p>-->
+<!--<p>Apellido: {{apellido}}</p>-->
+<!--<p>Edad: {{edad}}</p>-->
+<!--<p>Sueldo: {{sueldo | currency}}</p>-->
+<!--<p>Fecha nacimiento: {{fechaNacimiento | date:'yyyy/MM/dd'}}</p>-->
+
+<!--<button (blur)="cambiarClaseDeTitulo()"-->
+<!--(click)="cambiarClaseDeTitulo()">-->
+<!--{{nombreBoton}}-->
+<!--</button>-->
+<!--</div>-->
+<!--<button (click)="aplicarClase(textoInput.value)">-->
+<!--Aplicar clase-->
+<!--</button>-->
+<!--</div>-->
