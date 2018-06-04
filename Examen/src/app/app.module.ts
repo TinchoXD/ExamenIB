@@ -36,6 +36,8 @@ import {ButtonModule} from 'primeng/button';
 import {KeyFilterModule} from 'primeng/keyfilter';
 import {InputTextModule} from 'primeng/inputtext';
 import {CalendarModule} from 'primeng/calendar';
+import {FieldsetModule} from 'primeng/fieldset';
+
 
 
 
@@ -77,6 +79,7 @@ import {CalendarModule} from 'primeng/calendar';
     KeyFilterModule,
     InputTextModule,
     CalendarModule,
+    FieldsetModule
     // MenuItem
 
   ], //  Definimos todos los Modulos

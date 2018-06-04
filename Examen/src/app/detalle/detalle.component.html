@@ -1,27 +1,43 @@
-<div class="ui-g ui-fluid">
-  <div class="ui-g-12 ui-md-4">
-    <div class="ui-inputgroup">
-      <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-      <input type="text" pInputText placeholder="Peso en Gigas">
-
-      <hr/>
-      <input type="text" pInputText placeholder="Version"/>
-      <hr/>
-      <input type="text" pInputText placeholder="Nombre"/>
-      <hr/>
-      <input type="text" pInputText placeholder="URL Descarga"/>
-      <hr/>
-      <input type="text" pInputText placeholder="Fecha lanzamiento"/>
-      <hr/>
-      <input type="text" pInputText placeholder="Costo"/>
-      <hr/>
-      <input type="text" pInputText placeholder="ID Sistema operativo"/>
-
-
-    </div>
+<!--<div class="ui-g ui-fluid">-->
+  <!--<div class="ui-g-12 ui-md-4">-->
+    <!--<div class="ui-inputgroup">-->
+  <div>
+    <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+  <input type="text" pInputText placeholder="Peso en Gigas">
   </div>
-</div>
+<br>
+
+      <div>
+        <input type="text" pInputText placeholder="Version"/>
+      </div>
+<br>
+      <div>
+        <input type="text" pInputText placeholder="Nombre"/>
+      </div>
+<br>
+      <div>
+        <input type="text" pInputText placeholder="URL Descarga"/>
+      </div>
+<br>
+      <div>
+        <p-calendar [(ngModel)]="valueDate"></p-calendar>
+      </div>
+<br>
+      <div>
+        <input type="text" pInputText placeholder="Costo"/>
+      </div>
+
+<br>
+
+      <div>
+        <input type="text" pInputText placeholder="ID Sistema operativo"/>
+      </div>
+
+
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
 
 <hr/>
 <p-button label="Guardar" (onClick)="clickGuardar($event)"></p-button>
-<p-button label="Limpiar" (onClick)="clickLimpiar($event)"></p-button>
+<p-button label="Limpiar"  styleClass="ui-button-danger" (onClick)="clickLimpiar($event)"></p-button>
