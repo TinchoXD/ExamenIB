@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {MenuItem} from 'primeng/components/common/api';
 
 @Component({
   selector: 'app-root', // Selector o etiqueta

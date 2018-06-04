@@ -16,6 +16,8 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
 import 'hammerjs';
 import {MatButtonModule, MatFormFieldModule, MatCheckboxModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSelectModule} from '@angular/material/select';
@@ -27,13 +29,13 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { DetalleComponent } from './detalle/detalle.component';
 
 import {AccordionModule} from 'primeng/accordion';     // accordion and accordion tab
-import {MenuItem} from 'primeng/api';
+import {MenuItem} from 'primeng/components/common/api';
 import { CartaComponent } from './carta/carta.component';                 // api
 
 import {ButtonModule} from 'primeng/button';
 import {KeyFilterModule} from 'primeng/keyfilter';
-
-
+import {InputTextModule} from 'primeng/inputtext';
+import {CalendarModule} from 'primeng/calendar';
 
 
 
@@ -73,6 +75,8 @@ import {KeyFilterModule} from 'primeng/keyfilter';
     AccordionModule,
     ButtonModule,
     KeyFilterModule,
+    InputTextModule,
+    CalendarModule,
     // MenuItem
 
   ], //  Definimos todos los Modulos
