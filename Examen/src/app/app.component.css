@@ -2,6 +2,10 @@
   background-color: #0e0e0e;
 }
 
+.bordes_detalle{
+  margin-left: 15%;
+  margin-right: -15%;
+}
 /*.sa-titulo{*/
   /*!* propiedad:valorDeLaPropiedad;*!*/
   /*color: rgb(255, 232, 214);*/

@@ -27,7 +27,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { DetalleComponent } from './detalle/detalle.component';
 
 import {AccordionModule} from 'primeng/accordion';     // accordion and accordion tab
-// import {MenuItem} from 'primeng/api';
+import {MenuItem} from 'primeng/api';
 import { CartaComponent } from './carta/carta.component';                 // api
 
 import {ButtonModule} from 'primeng/button';
@@ -72,7 +72,7 @@ import {KeyFilterModule} from 'primeng/keyfilter';
     MatGridListModule,
     AccordionModule,
     ButtonModule,
-    KeyFilterModule
+    KeyFilterModule,
     // MenuItem
 
   ], //  Definimos todos los Modulos
