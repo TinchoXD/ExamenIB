@@ -1,0 +1,44 @@
+<form class="example-form">
+  <div>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Nombre" value="">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field class="example-full-width">
+      <input pInputText pKeyFilter="num" matInput placeholder="Version api" value="">
+    </mat-form-field>
+
+
+  </div>
+
+  <div>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="dd/mm/aa">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field class="example-full-width">
+      <input pInputText pKeyFilter="num" matInput placeholder="Peso ( GB )" value="">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-select placeholder="Instalado">
+        <mat-option value="option">Sí</mat-option>
+        <mat-option value="option">No</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+</form>
+
+<button mat-raised-button	class="espacio_boton">Guardar</button>
+<button mat-stroked-button	>Limpiar</button>
+
+
