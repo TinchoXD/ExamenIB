@@ -6,13 +6,12 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./cabecera.component.css']
 })
 export class CabeceraComponent implements OnInit {
-
   @Input() arregloSO: [any];
   nombrengm: string;
   versionngm: number;
   fechangm: string;
   pesongm: number;
-  instaladongm: string;
+  instaladongm: boolean;
 
 
   constructor() {
@@ -22,7 +21,9 @@ export class CabeceraComponent implements OnInit {
   }
 
   guardar() {
-    this.arregloSO.push(new SistemaOperativo(this.nombrengm, this.versionngm, this.fechangm, this.pesongm, this.instaladongm));
+    console.log(`${this.nombrengm}`);
+    console.log(`${this.instaladongm}`);
+    this.arregloSO.push(new SistemaOperativo(this.nombrengm, /*this.versionngm, this.fechangm, this.pesongm, */this.instaladongm));
   }
 
   limpiar() {
@@ -30,13 +31,13 @@ export class CabeceraComponent implements OnInit {
     this.versionngm = 0;
     this.fechangm = '';
     this.pesongm = 0;
-    this.instaladongm = 'No';
+    this.instaladongm = false;
   }
 
 }
 
 class SistemaOperativo {
-  constructor(public nombreSO: string, public versionSO: number, public fechaSO: string, public pesoSO, public instaladoSO: string) {
+  constructor(public nombreSO: string /* , public versionSO: number, public fechaSO: string, public pesoSO*/, public instaladoSO: boolean) {
 
   }
 

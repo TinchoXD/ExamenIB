@@ -1,4 +1,4 @@
-import { Component, Input , OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-listado',
@@ -7,24 +7,24 @@ import { Component, Input , OnInit } from '@angular/core';
 })
 export class ListadoComponent implements OnInit {
 
-  @Input() listado: [any];
-  NombreSO: string;
-  VersionApi: number;
-  FechaLanzamiento: string;
-  PesoGigas: number;
-  EstadoInstalacion: boolean;
+  @Input() NombreSO: string;
+  @Input() VersionApi: number;
+  @Input() FechaLanzamiento: string;
+  @Input() PesoGigas: number;
+  @Input() EstadoInstalacion: boolean;
 
-  tiles = [
-    {text: 'One', cols: 1, rows: 2, color: 'lightblue'},
-    {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
-    {text: 'Three', cols: 1, rows: 2, color: 'lightpink'},
-    {text: 'Four', cols: 1, rows: 2, color: '#DDBDF1'},
-    {text: 'Five', cols: 1, rows: 2, color: 'lightblue'},
-    {text: 'Six', cols: 1, rows: 2, color: 'lightgreen'},
-    {text: 'Seven', cols: 1, rows: 2, color: 'lightpink'},
-    {text: 'Eigth', cols: 1, rows: 2, color: '#DDBDF1'},
-  ];
-  constructor() { }
+  // SOlista = [
+  //
+  //   {textNombre: this.NombreSO, textInstaaldo: this.EstadoInstalacion, cols: 1, rows: 2, color: 'lightblue'},
+  //   // {text: 'One', cols: 1, rows: 2, color: 'lightblue'},
+  //   // {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
+  //   // {text: 'Three', cols: 1, rows: 2, color: 'lightpink'},
+  //   // {text: 'Four', cols: 1, rows: 2, color: '#DDBDF1'},
+  //
+  // ];
+
+  constructor() {
+  }
 
   ngOnInit() {
 

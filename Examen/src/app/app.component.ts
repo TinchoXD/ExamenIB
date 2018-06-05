@@ -9,6 +9,8 @@ import {MenuItem} from 'primeng/components/common/api';
 
 export class AppComponent {
 
+  title = 'app';
+  arregloSO2 = [];
   mostrarHola = true;
 
   arregloNumeros = [1, 2, 3, 4, 5, 6];
@@ -28,12 +30,11 @@ export class AppComponent {
     },
 
 
-
   ];
 
   alertar(evento) {
     console.log('Evento: ', evento);
-  alert('DIO CLIC EN ES ESTRENO!!!!!!!!!!!!!!!!');
+    alert('DIO CLIC EN ES ESTRENO!!!!!!!!!!!!!!!!');
   }
 
   // nombre = 'Adrian';
