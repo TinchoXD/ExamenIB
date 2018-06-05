@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-listado',
@@ -7,21 +7,15 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ListadoComponent implements OnInit {
 
+  @Input() indice: number;
   @Input() NombreSO: string;
   @Input() VersionApi: number;
   @Input() FechaLanzamiento: string;
   @Input() PesoGigas: number;
   @Input() EstadoInstalacion: boolean;
 
-  // SOlista = [
-  //
-  //   {textNombre: this.NombreSO, textInstaaldo: this.EstadoInstalacion, cols: 1, rows: 2, color: 'lightblue'},
-  //   // {text: 'One', cols: 1, rows: 2, color: 'lightblue'},
-  //   // {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
-  //   // {text: 'Three', cols: 1, rows: 2, color: 'lightpink'},
-  //   // {text: 'Four', cols: 1, rows: 2, color: '#DDBDF1'},
-  //
-  // ];
+  @Output() clicListado: EventEmitter<number> = new EventEmitter();
+
 
   constructor() {
   }
@@ -29,5 +23,13 @@ export class ListadoComponent implements OnInit {
   ngOnInit() {
 
   }
+  clicListadoF(indice) {
+    this.clicListado.emit(indice);
+    console.log(this.NombreSO)
+    console.log(this.VersionApi)
+    console.log(this.FechaLanzamiento)
+    console.log(indice);
+  }
+
 
 }

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carta.component.css']
 })
 export class CartaComponent implements OnInit {
+  cartangm: string;
 
   constructor() { }
 

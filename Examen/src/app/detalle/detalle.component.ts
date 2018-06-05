@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-detalle',
@@ -6,17 +6,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detalle.component.css']
 })
 export class DetalleComponent implements OnInit {
-  valueDate
+
+  pesoDetallengm: number;
+  versionDetallengm: number;
+  nombreDetallengm: string;
+  urlDetallengm: string;
+  dateDetallengm: string;
+  costoDetallengm: number;
+  idDetallengm: number;
+
+  // @Input()
+
   constructor() { }
   clickGuardar() {
-    alert('dio clic en guardar');
+   // this.pesoDetallengm = ;
     // execute action
-  }
-  clickLimpiar(){
-    alert('dio clic en limpiar');
-    // execute action
-  }
-  ngOnInit() {
   }
 
+  ngOnInit() {
+  }
+  limpiarDetalle() {
+    this.pesoDetallengm = 0;
+    this.versionDetallengm = 0;
+    this.nombreDetallengm = '';
+    this.urlDetallengm = '';
+    this.dateDetallengm = '';
+    this.costoDetallengm = 0;
+    this.idDetallengm = 0;
+  }
 }

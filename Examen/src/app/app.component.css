@@ -6,6 +6,13 @@
   margin-left: 15%;
   margin-right: -15%;
 }
+
+.borde_negro{
+  border-top-width: 10px;
+  border-right-width: 1em;
+  border-bottom-width: thick;
+  border-left-width: thin;
+}
 /*.sa-titulo{*/
   /*!* propiedad:valorDeLaPropiedad;*!*/
   /*color: rgb(255, 232, 214);*/

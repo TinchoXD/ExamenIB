@@ -10,28 +10,24 @@ import {MenuItem} from 'primeng/components/common/api';
 export class AppComponent {
 
   title = 'app';
+
+
+
   arregloSO2 = [];
+
+  SO = this.arregloSO2[0];
+
   mostrarHola = true;
 
-  arregloNumeros = [1, 2, 3, 4, 5, 6];
 
-  arregloPeliculas = [
-    {
-      nombrePelicula: 'Tomb Raider',
-      descripcion: 'Alicia Vikander, Walton Goggins',
-      urlImagen: 'https://i1.wp.com/codigoespagueti.com/wp-content/uploads/2018/03/tomb-raider-23.jpg?resize=1080%2C600&quality=100&ssl=1',
-      esEstreno: true
-    },
-    {
-      nombrePelicula: 'Maze Runner',
-      descripcion: ' Newt, Minho, Teresa, Gally, Sarten, La Rata, Ava Paige',
-      urlImagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEZzpfXtB7z9BRBC2OaJ_uY7m5TwcclPMumlnk5NUF_bX_JNsn',
-      esEstreno: false
-    },
+  mostrarIndice(indice) {
+    this.SO = this.arregloSO2[indice];
+  }
 
 
-  ];
-
+  cargarDetalle(indice) {
+    this.SO = this.arregloSO2[indice];
+  }
   alertar(evento) {
     console.log('Evento: ', evento);
     alert('DIO CLIC EN ES ESTRENO!!!!!!!!!!!!!!!!');

@@ -1,45 +1,45 @@
 <!--<div class="ui-g ui-fluid">-->
-  <!--<div class="ui-g-12 ui-md-4">-->
-    <!--<div class="ui-inputgroup">-->
+<!--<div class="ui-g-12 ui-md-4">-->
+<!--<div class="ui-inputgroup">-->
 <form class="example-form">
-<div>
+  <div>
     <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-  <input type="text" pInputText placeholder="Peso en Gigas">
+    <input pInputText [(ngModel)]="pesoDetallengm" name= "pesoDetalle" placeholder="PesoenGigas">
   </div>
-<br>
+  <br>
 
-      <div>
-        <input type="text" pInputText placeholder="Version"/>
-      </div>
-<br>
-      <div>
-        <input type="text" pInputText placeholder="Nombre"/>
-      </div>
-<br>
-      <div>
-        <input type="text" pInputText placeholder="URL Descarga"/>
-      </div>
-<br>
-      <div>
-        <p-calendar [(ngModel)]="valueDate" name="dsa"></p-calendar>
-      </div>
-<br>
-      <div>
-        <input type="text" pInputText placeholder="Costo"/>
-      </div>
+  <div>
+    <input type="text" pInputText [(ngModel)]="versionDetallengm" name= "versiondetalle" placeholder="Version"/>
+  </div>
+  <br>
+  <div>
+    <input type="text" pInputText [(ngModel)]="nombreDetallengm" name= "nombreDetalle" placeholder="Nombre"/>
+  </div>
+  <br>
+  <div>
+    <input type="text" pInputText [(ngModel)]="urlDetallengm" name= "urlDetalle" placeholder="URL Descarga"/>
+  </div>
+  <br>
+  <div>
+    <p-calendar [(ngModel)]="dateDetallengm" name="calendar"></p-calendar>
+  </div>
+  <br>
+  <div>
+    <input type="text" pInputText [(ngModel)]="costoDetallengm" name= "costoDetalle" placeholder="Costo"/>
+  </div>
 
-<br>
+  <br>
 
-      <div>
-        <input type="text" pInputText placeholder="ID Sistema operativo"/>
-      </div>
+  <div>
+    <input type="text" pInputText [(ngModel)]="idDetallengm" name= "idDetalle" placeholder="ID Sistema operativo"/>
+  </div>
 
 
-    <!--</div>-->
   <!--</div>-->
-<!--</div>-->
+  <!--</div>-->
+  <!--</div>-->
 
-<hr/>
+  <hr/>
 </form>
 <p-button label="Guardar" (onClick)="clickGuardar($event)"></p-button>
-<p-button label="Limpiar"  styleClass="ui-button-danger" (onClick)="clickLimpiar($event)"></p-button>
+<p-button label="Limpiar" styleClass="ui-button-danger" (onClick)="limpiarDetalle()"></p-button>

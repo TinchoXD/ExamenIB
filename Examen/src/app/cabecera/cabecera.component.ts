@@ -21,8 +21,8 @@ export class CabeceraComponent implements OnInit {
   }
 
   guardar() {
-    console.log(`${this.nombrengm}`);
-    console.log(`${this.instaladongm}`);
+
+
     this.arregloSO.push(new SistemaOperativo(this.nombrengm, this.versionngm, this.fechangm, this.pesongm, this.instaladongm));
   }
 

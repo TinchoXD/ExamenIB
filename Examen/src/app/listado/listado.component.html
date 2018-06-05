@@ -1,12 +1,11 @@
-<mat-grid-list cols="4" rowHeight="150px">
-  <mat-grid-tile>
+<div (click)="clicListadoF(indice)">
 
 
-    <p>{{NombreSO}}</p>
-    <p>{{VersionApi}}</p>
-    <p>{{FechaLanzamiento}}</p>
-    <p>{{PesoGigas}}</p>
-    <p>{{EstadoInstalacion}}</p>
+    <p>Nombre: {{NombreSO}}</p>
+    <p>Version: {{VersionApi}}</p>
+    <p>Fecha lanzamiento: {{FechaLanzamiento}}</p>
+    <p>Peso en Gigas: {{PesoGigas}}</p>
+    <p>instalado: {{EstadoInstalacion}}</p> 
 
 
     <!--*ngFor="let so of arregloSO"-->
@@ -17,5 +16,4 @@
     <!--[rowspan]="so.rows"-->
     <!--[style.background]="so.color">-->
 
-  </mat-grid-tile>
-</mat-grid-list>
+</div>

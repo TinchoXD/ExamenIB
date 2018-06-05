@@ -190,7 +190,8 @@
 
 <div class="row">
   <div class="=col-md-6 fondo-negro">carrusel
-    <app-carrusel></app-carrusel>
+    <app-carrusel
+    ></app-carrusel>
   </div>
 
   <div class="col-md-6">
@@ -202,16 +203,17 @@
 <br>
 
 <div class="row">
-  <div *ngFor="let sistema of arregloSO2" class="col-md-3">
+  <div *ngFor="let sistema of arregloSO2; let indice = index" class="col-md-3 ">
     <app-listado
 
+      [indice]="indice"
       [NombreSO]="sistema.nombreSO"
       [VersionApi]="sistema.versionSO"
       [FechaLanzamiento]="sistema.fechaSO"
       [PesoGigas]="sistema.pesoSO"
       [EstadoInstalacion]="sistema.instaladoSO"
 
-
+  (clicListado) = "mostrarIndice($event)"
     >
       <!--[EstadoInstalacion]="sistema.Instalado"-->
 

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {InputText} from "primeng/primeng";
 
 @Component({
   selector: 'app-carrusel',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarruselComponent implements OnInit {
 
+@Input() SO: string;
+
+
+
+
   constructor() { }
 
   ngOnInit() {
   }
-
+  // class SistemaOperativoCarrusel {
+  // constructor(public nombreSOC: string,
+  //             public versionSOC: number,
+  //             public fechaSOC: string,
+  //             public pesoSOC: number,
+  //             public instaladoSOC: boolean) {
+  //
+  // }
 }
