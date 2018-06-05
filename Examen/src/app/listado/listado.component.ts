@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input , OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-listado',
@@ -6,6 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listado.component.css']
 })
 export class ListadoComponent implements OnInit {
+
+  @Input() listado: [any];
+  NombreSO: string;
+  VersionApi: number;
+  FechaLanzamiento: string;
+  PesoGigas: number;
+  EstadoInstalacion: boolean;
+
   tiles = [
     {text: 'One', cols: 1, rows: 2, color: 'lightblue'},
     {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
