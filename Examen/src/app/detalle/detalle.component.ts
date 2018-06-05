@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detalle.component.css']
 })
 export class DetalleComponent implements OnInit {
-
+  valueDate
   constructor() { }
   clickGuardar() {
     alert('dio clic en guardar');

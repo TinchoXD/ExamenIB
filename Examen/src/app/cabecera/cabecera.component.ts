@@ -6,7 +6,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./cabecera.component.css']
 })
 export class CabeceraComponent implements OnInit {
-  @Input() arregloSO: [any];
+  @Input() arregloSO: any[];
   nombrengm: string;
   versionngm: number;
   fechangm: string;
