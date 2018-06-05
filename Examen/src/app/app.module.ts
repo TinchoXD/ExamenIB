@@ -37,6 +37,9 @@ import {KeyFilterModule} from 'primeng/keyfilter';
 import {InputTextModule} from 'primeng/inputtext';
 import {CalendarModule} from 'primeng/calendar';
 import {FieldsetModule} from 'primeng/fieldset';
+import {DataListModule} from 'primeng/datalist';
+import { DataListComponent } from './data-list/data-list.component';
+import {TableModule} from 'primeng/table';
 
 
 
@@ -57,6 +60,7 @@ import {FieldsetModule} from 'primeng/fieldset';
     ListadoComponent,
     DetalleComponent,
     CartaComponent,
+    DataListComponent,
     // CabeceraComponent
   ], // Definir todos los componentes a usarse
      // Definin todos los pipes -> transforman datos
@@ -79,7 +83,9 @@ import {FieldsetModule} from 'primeng/fieldset';
     KeyFilterModule,
     InputTextModule,
     CalendarModule,
-    FieldsetModule
+    FieldsetModule,
+    DataListModule,
+    TableModule
     // MenuItem
 
   ], //  Definimos todos los Modulos
