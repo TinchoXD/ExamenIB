@@ -23,7 +23,7 @@ export class CabeceraComponent implements OnInit {
   guardar() {
     console.log(`${this.nombrengm}`);
     console.log(`${this.instaladongm}`);
-    this.arregloSO.push(new SistemaOperativo(this.nombrengm, /*this.versionngm, this.fechangm, this.pesongm, */this.instaladongm));
+    this.arregloSO.push(new SistemaOperativo(this.nombrengm, this.versionngm, this.fechangm, this.pesongm, this.instaladongm));
   }
 
   limpiar() {
@@ -37,7 +37,11 @@ export class CabeceraComponent implements OnInit {
 }
 
 class SistemaOperativo {
-  constructor(public nombreSO: string /* , public versionSO: number, public fechaSO: string, public pesoSO*/, public instaladoSO: boolean) {
+  constructor(public nombreSO: string,
+              public versionSO: number,
+              public fechaSO: string,
+              public pesoSO: number,
+              public instaladoSO: boolean) {
 
   }
 
