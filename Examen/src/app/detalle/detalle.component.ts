@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-detalle',
@@ -7,25 +7,31 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class DetalleComponent implements OnInit {
 
-  pesoDetallengm: number;
-  versionDetallengm: number;
-  nombreDetallengm: string;
-  urlDetallengm: string;
-  dateDetallengm: string;
-  costoDetallengm: number;
-  idDetallengm: number;
+  @Input() sistmaOperativoID: number;
+  @Input() pesoDetallengm: number;
+  @Input() versionDetallengm: number;
+  @Input() nombreDetallengm: string;
+  @Input() urlDetallengm: string;
+  @Input() dateDetallengm: string;
+  @Input() costoDetallengm: number;
+  @Input() idDetallengm: number;
+
+  @Output() dioClickEnBotonCrear: EventEmitter<any> = new EventEmitter();
 
   // @Input()
 
-  constructor() { }
+  constructor() {
+  }
+
   clickGuardar() {
-   // this.pesoDetallengm = ;
+    // this.pesoDetallengm = ;
     // execute action
   }
 
   ngOnInit() {
   }
-  limpiarDetalle() {
+
+  hizoClickEnBotonLimpiar() {
     this.pesoDetallengm = 0;
     this.versionDetallengm = 0;
     this.nombreDetallengm = '';
@@ -34,4 +40,21 @@ export class DetalleComponent implements OnInit {
     this.costoDetallengm = 0;
     this.idDetallengm = 0;
   }
+
+  hizoClickEnBotonCrear() {
+
+    const sistema = {
+      sistmaOperativoID: this.sistmaOperativoID,
+      pesoDetallengm: this.pesoDetallengm,
+      versionDetallengm: this.versionDetallengm,
+      nombreDetallengm: this.nombreDetallengm,
+      urlDetallengm: this.urlDetallengm,
+      dateDetallengm: this.dateDetallengm,
+      costoDetallengm: this.costoDetallengm,
+      idDetallengm: this.idDetallengm,
+
+    };
+    this.dioClickEnBotonCrear.emit(sistema);
+  }
+
 }

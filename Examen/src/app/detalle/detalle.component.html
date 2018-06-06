@@ -21,7 +21,7 @@
   </div>
   <br>
   <div>
-    <p-calendar [(ngModel)]="dateDetallengm" name="calendar"></p-calendar>
+    <input type="text" pInputText [(ngModel)]="dateDetallengm" name= "dateDetalle" placeholder="Fecha lanzamiento"/>
   </div>
   <br>
   <div>
@@ -41,5 +41,7 @@
 
   <hr/>
 </form>
-<p-button label="Guardar" (onClick)="clickGuardar($event)"></p-button>
-<p-button label="Limpiar" styleClass="ui-button-danger" (onClick)="limpiarDetalle()"></p-button>
+
+
+<p-button (click)="hizoClickEnBotonLimpiar()" label="Limpiar" styleClass="ui-button-danger"></p-button>
+<p-button (click)="hizoClickEnBotonCrear()" label="Guardar" ></p-button>

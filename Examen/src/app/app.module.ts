@@ -40,6 +40,7 @@ import {FieldsetModule} from 'primeng/fieldset';
 import {DataListModule} from 'primeng/datalist';
 import { DataListComponent } from './data-list/data-list.component';
 import {TableModule} from 'primeng/table';
+import {CardModule} from 'primeng/card';
 
 
 
@@ -85,7 +86,8 @@ import {TableModule} from 'primeng/table';
     CalendarModule,
     FieldsetModule,
     DataListModule,
-    TableModule
+    TableModule,
+    CardModule
     // MenuItem
 
   ], //  Definimos todos los Modulos

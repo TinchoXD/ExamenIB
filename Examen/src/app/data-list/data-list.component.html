@@ -1,3 +1,24 @@
-<p>
-  data-list works!
-</p>
+<h3 class="first">Basic</h3>
+<p-table [value]="sistemaOperativo">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Sistema Operativo ID</th>
+      <th>nombre SO</th>
+      <th>Version API</th>
+      <th>Fecha Lanzamiento</th>
+      <th>Peso en gigas</th>
+      <th>Instalado</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-SO>
+    <tr (click)="hizoClickEnFila(SO.sistemaOperativoId)">
+      <td>{{SO.sistemaOperativoId}}</td>
+      <td>{{SO.nombre}}</td>
+      <td>{{SO.versionApi}}</td>
+      <td>{{SO.fechaLanzamiento}}</td>
+      <td>{{SO.pesoEnGigas}}</td>
+      <td>{{SO.instalado}}</td>
+
+    </tr>
+  </ng-template>
+</p-table>

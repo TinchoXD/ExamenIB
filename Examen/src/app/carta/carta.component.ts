@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-carta',
@@ -6,9 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carta.component.css']
 })
 export class CartaComponent implements OnInit {
-  cartangm: string;
 
-  constructor() { }
+  @Input() sistemaOperativoID: number;
+  @Input() indice: number;
+  @Input() NombreSO: string;
+  @Input() VersionApi: number;
+  @Input() FechaLanzamiento: string;
+  @Input() PesoGigas: number;
+  @Input() EstadoInstalacion: boolean;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

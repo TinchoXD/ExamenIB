@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
+import {SistemaOperativo} from '../app.component';
 
 
 
@@ -12,10 +13,15 @@ import { Component, OnInit } from '@angular/core';
 
 export class DataListComponent implements OnInit {
 
+  @Input() sistemaOperativo: SistemaOperativo[];
+
+  @Output() dioClickEnFila: EventEmitter<number> = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  hizoClickEnFila(sistemaID) {
+    this.dioClickEnFila.emit(sistemaID);
+  }
 }
