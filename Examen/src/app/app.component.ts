@@ -10,7 +10,7 @@ import {MenuItem} from 'primeng/components/common/api';
 export class AppComponent {
 
 
-  arregloSO2 = [
+  sistemasOperativos = [
     {
       sistemaOperativoId: 1,
       nombre: 'win',
@@ -20,6 +20,7 @@ export class AppComponent {
       instalado: true,
       aplicaciones: [
         {
+          detalleId: 3,
           pesoEnGigas: 100,
           version: 1.0,
           nombre: 'paint',
@@ -29,6 +30,7 @@ export class AppComponent {
           sistemaOperativoId: 1,
         },
         {
+          detalleId: 7,
           pesoEnGigas: 2,
           version: 1.3,
           nombre: 'word',
@@ -48,6 +50,7 @@ export class AppComponent {
       instalado: false,
       aplicaciones: [
         {
+          detalleId: 8,
           pesoEnGigas: 11,
           version: 1.0,
           nombre: 'console',
@@ -59,86 +62,57 @@ export class AppComponent {
       ],
     },
   ];
-  // arregloSO2 = [];
 
-  SO = this.arregloSO2[0];
+  sistemaOperativo = this.sistemasOperativos[0];
+  detalle = this.sistemaOperativo.aplicaciones[0];
 
-  aplicacion = this.SO.aplicaciones[0];
-
-  mostrarHola = true;
-
+  getSistemaOperativo() {
+    return this.sistemaOperativo;
+  }
 
 
   mostrarIndice(indice) {
-    this.SO = this.arregloSO2[indice];
-    this.aplicacion = this.SO.aplicaciones[0];
+    this.sistemaOperativo = this.sistemasOperativos[indice];
   }
 
-  alertarPeliculaDioClickEnBotonCrear(SO) {
-    this.SO.aplicaciones.push(SO);
+  alertarDioClickEnBotonCrear(sistemaOperativo) {
+    this.sistemasOperativos.push(sistemaOperativo);
   }
 
-  cargarDetalle(indice) {
-    this.SO = this.arregloSO2[indice];
-    this.aplicacion = this.SO.aplicaciones[0];
+  alertarPeliculaDioClickEnBotonCrear(detalle) {
+    this.sistemaOperativo.aplicaciones.push(detalle);
   }
 
-  alertar(evento) {
-    console.log('Evento: ', evento);
-    alert('DIO CLIC EN ES ESTRENO!!!!!!!!!!!!!!!!');
-  }
+  alertarPeliculaDioClickEnFila(detalleId) {
+    const aplicaciones = this.sistemaOperativo.aplicaciones.filter(person => person.detalleId === detalleId);
 
-  alertarSistemaDioClickEnFila(sistemaID) {
-    const sistemas = this.SO.aplicaciones.filter(s => s.sistemaOperativoId === sistemaID);
-
-    if (sistemas == null) {
+    if (aplicaciones == null)
       return;
-    }
-    this.aplicacion = sistemas[0];
+
+    this.detalle = aplicaciones[0];
   }
-
-
-  // nombre = 'Adrian';
-  // apellido = 'Eguez';
-  // edad = 28;
-  // sueldo = 3411234.13;
-  // fechaNacimiento = new Date('1989-06-10');
-  // nombreBoton = 'Cambiar color';
-  // nombreClase = 'sa-titulo';
-  // clase = 'papa';
-  //
-  // cambiarClaseDeTitulo() {
-  //   const nombreClaseEsTitulo = this.nombreClase === 'sa-titulo';
-  //   if (nombreClaseEsTitulo) {
-  //     this.nombreClase = 'sa-subtitulo';
-  //   } else {
-  //     this.nombreClase = 'sa-titulo';
-  //   }
-  // }
-  //
-  // aplicarClase(valorInput: string) {
-  //   this.nombreClase = valorInput;
-  // }
 }
 
-export interface SistemaOperativo {
+export interface Cabecera {
   sistemaOperativoId: number;
   nombre: string;
   versionApi: number;
   fechaLanzamiento: string;
   pesoEnGigas: number;
   instalado: boolean;
-  aplicaciones: Aplicacion[];
+  aplicaciones: Detalle[];
 }
 
-export interface Aplicacion {
-  pesoEnGigas: number;
-  version: number;
-  nombre: string;
-  urlDescarga: string;
-  fechaLanzamiento: string;
-  costo: number;
-  sistemaOperativoId: number;
+export interface Detalle {
+  detalleId;
+  pesoEnGigas;
+  version;
+  nombre;
+  urlDescarga;
+  fechaLanzamiento;
+  costo;
+  sistemaOperativoId;
 }
+
 
 

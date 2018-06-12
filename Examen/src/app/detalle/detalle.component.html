@@ -1,6 +1,57 @@
+<div class="detalle">
+
+  <span class="ui-float-label">
+      <input id="detalleId" type="text" size="30" pInputText [(ngModel)]="detalleId">
+      <label for="detalleId">detalleId</label>
+    </span>
+
+  <span class="ui-float-label">
+      <input id="pesoEnGigas" type="text" size="30" pInputText [(ngModel)]="pesoEnGigas">
+      <label for="pesoEnGigas">Peso En Gigas</label>
+    </span>
+
+  <br>
+
+  <span class="ui-float-label">
+      <input id="version" type="text" size="30" pInputText [(ngModel)]="version">
+      <label for="version">Version</label>
+    </span>
+
+  <br>
+
+  <span class="ui-float-label">
+      <input id="nombre" type="text" size="30" pInputText [(ngModel)]="nombre">
+      <label for="nombre">Nombre</label>
+  </span>
+
+
+  <br>
+
+  <span class="ui-float-label">
+      <input id="urlDescarga" type="text" size="30" pInputText [(ngModel)]="urlDescarga">
+      <label for="urlDescarga">Url Descarga</label>
+  </span>
+
+  <br>
+
+  <span class="ui-float-label">
+      <input id="fechaLanzamiento" type="text" size="30" pInputText [(ngModel)]="fechaLanzamiento">
+      <label for="fechaLanzamiento">Fecha Lanzamiento</label>
+  </span>
+  <span class="ui-float-label">
+      <input id="costo" type="text" size="30" pInputText [(ngModel)]="costo">
+      <label for="costo">Costo</label>
+  </span>
+
+  <p-button (click)="hizoClickEnBotonLimpiar()" label="Limpiar"></p-button>
+  <p-button (click)="hizoClickEnBotonCrear()" label="Crear"></p-button>
+
+</div>
+
+
 <!--<div class="ui-g ui-fluid">-->
 <!--<div class="ui-g-12 ui-md-4">-->
-<!--<div class="ui-inputgroup">-->
+<!--<div class="ui-inputgroup">
 <form class="example-form">
   <div>
     <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
@@ -33,15 +84,16 @@
   <div>
     <input type="text" pInputText [(ngModel)]="idDetallengm" name= "idDetalle" placeholder="ID Sistema operativo"/>
   </div>
+-->
 
+<!--</div>-->
+<!--</div>-->
+<!--</div>
 
-  <!--</div>-->
-  <!--</div>-->
-  <!--</div>-->
-
-  <hr/>
+<hr/>
 </form>
 
 
 <p-button (click)="hizoClickEnBotonLimpiar()" label="Limpiar" styleClass="ui-button-danger"></p-button>
 <p-button (click)="hizoClickEnBotonCrear()" label="Guardar" ></p-button>
+-->

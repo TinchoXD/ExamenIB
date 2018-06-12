@@ -1,8 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-
-import {SistemaOperativo} from '../app.component';
-
-
+import {Detalle} from '../app.component';
 
 @Component({
   selector: 'app-data-list',
@@ -13,7 +10,7 @@ import {SistemaOperativo} from '../app.component';
 
 export class DataListComponent implements OnInit {
 
-  @Input() sistemaOperativo: SistemaOperativo[];
+  @Input() detalles: Detalle[];
 
   @Output() dioClickEnFila: EventEmitter<number> = new EventEmitter();
 
@@ -21,7 +18,7 @@ export class DataListComponent implements OnInit {
 
   ngOnInit() {
   }
-  hizoClickEnFila(sistemaID) {
-    this.dioClickEnFila.emit(sistemaID);
+  hizoClickEnFila(detalleId) {
+    this.dioClickEnFila.emit(detalleId);
   }
 }

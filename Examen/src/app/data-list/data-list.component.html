@@ -1,23 +1,27 @@
 <h3 class="first">Basic</h3>
-<p-table [value]="sistemaOperativo">
+<p-table [value]="detalles">
   <ng-template pTemplate="header">
     <tr>
-      <th>Sistema Operativo ID</th>
-      <th>nombre SO</th>
-      <th>Version API</th>
-      <th>Fecha Lanzamiento</th>
-      <th>Peso en gigas</th>
-      <th>Instalado</th>
+      <th>detalleId</th>
+      <th>pesoEnGigas</th>
+      <th>version</th>
+      <th>nombre</th>
+      <th>urlDescarga</th>
+      <th>fechaLanzamiento</th>
+      <th>costo</th>
+      <th>cabeceraId</th>
     </tr>
   </ng-template>
-  <ng-template pTemplate="body" let-SO>
-    <tr (click)="hizoClickEnFila(SO.sistemaOperativoId)">
-      <td>{{SO.sistemaOperativoId}}</td>
-      <td>{{SO.nombre}}</td>
-      <td>{{SO.versionApi}}</td>
-      <td>{{SO.fechaLanzamiento}}</td>
-      <td>{{SO.pesoEnGigas}}</td>
-      <td>{{SO.instalado}}</td>
+  <ng-template pTemplate="body" let-detalle>
+    <tr (click)="hizoClickEnFila(detalle.detalleId)">
+      <td>{{detalle.detalleId}}</td>
+      <td>{{detalle.pesoEnGigas}}</td>
+      <td>{{detalle.version}}</td>
+      <td>{{detalle.nombre}}</td>
+      <td>{{detalle.urlDescarga}}</td>
+      <td>{{detalle.fechaLanzamiento}}</td>
+      <td>{{detalle.costo}}</td>
+      <td>{{detalle.cabeceraId}}</td>
 
     </tr>
   </ng-template>

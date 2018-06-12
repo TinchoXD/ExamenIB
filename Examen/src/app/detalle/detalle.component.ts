@@ -7,14 +7,14 @@ import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 })
 export class DetalleComponent implements OnInit {
 
-  @Input() sistmaOperativoID: number;
-  @Input() pesoDetallengm: number;
-  @Input() versionDetallengm: number;
-  @Input() nombreDetallengm: string;
-  @Input() urlDetallengm: string;
-  @Input() dateDetallengm: string;
-  @Input() costoDetallengm: number;
-  @Input() idDetallengm: number;
+  @Input() detalleId: number;
+  @Input() pesoEnGigas: number;
+  @Input() version: number;
+  @Input() nombre: string;
+  @Input() urlDescarga: string;
+  @Input() fechaLanzamiento: string;
+  @Input() costo: number;
+  @Input() cabeceraId: number;
 
   @Output() dioClickEnBotonCrear: EventEmitter<any> = new EventEmitter();
 
@@ -32,29 +32,30 @@ export class DetalleComponent implements OnInit {
   }
 
   hizoClickEnBotonLimpiar() {
-    this.pesoDetallengm = 0;
-    this.versionDetallengm = 0;
-    this.nombreDetallengm = '';
-    this.urlDetallengm = '';
-    this.dateDetallengm = '';
-    this.costoDetallengm = 0;
-    this.idDetallengm = 0;
+    this.detalleId = 0;
+    this.pesoEnGigas = 0;
+    this.version = 0;
+    this.nombre = '';
+    this.urlDescarga = '';
+    this.fechaLanzamiento = '';
+    this.costo = 0;
+    this.cabeceraId = 0;
   }
 
   hizoClickEnBotonCrear() {
 
-    const sistema = {
-      sistmaOperativoID: this.sistmaOperativoID,
-      pesoDetallengm: this.pesoDetallengm,
-      versionDetallengm: this.versionDetallengm,
-      nombreDetallengm: this.nombreDetallengm,
-      urlDetallengm: this.urlDetallengm,
-      dateDetallengm: this.dateDetallengm,
-      costoDetallengm: this.costoDetallengm,
-      idDetallengm: this.idDetallengm,
+    const detalle = {
+      detalleId: this.detalleId,
+      pesoEnGigas: this.pesoEnGigas,
+      version: this.version,
+      nombre: this.nombre,
+      urlDescarga: this.urlDescarga,
+      fechaLanzamiento: this.fechaLanzamiento,
+      costo: this.costo,
+      cabeceraId: this.cabeceraId,
 
     };
-    this.dioClickEnBotonCrear.emit(sistema);
+    this.dioClickEnBotonCrear.emit(detalle);
   }
 
 }
